@@ -7,6 +7,19 @@
 
 #include <iostream>
 
+void doStringMagic() {
+    std::string str1 = "Hello, ";
+    std::string str2 = "World!";
+    
+    std::string str3 = str1 + str2;
+    
+    std::cout << "Str3: " << str3 << std::endl;
+    
+    int len = int(str3.size());
+    
+    std::cout << "Size of Str3: " << len << std::endl;
+}
+
 int sumOf(int a, int b) {
     return a + b;
 }
@@ -17,6 +30,8 @@ int main(int argc, const char * argv[]) {
     int c = sumOf(a, b);
     
     std::cout << c << std::endl;
+    
+    doStringMagic();
     
     return 0;
 }
