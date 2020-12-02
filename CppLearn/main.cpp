@@ -7,8 +7,16 @@
 
 #include <iostream>
 
+int sumOf(int a, int b) {
+    return a + b;
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int a = 100;
+    int b = 20;
+    int c = sumOf(a, b);
+    
+    std::cout << c << std::endl;
+    
     return 0;
 }
